@@ -1,0 +1,26 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: spring-test-node
+  namespace: default
+  generation: 3
+  labels:
+    app: spring-test-node
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: spring-test-node
+  template:
+    metadata:
+      labels:
+        app: spring-test-node
+    spec:
+      containers:
+        - name: docker-test-repo
+          image: 'nagyrenato/docker-test-repo:0.0.2-SNAPSHOT'
+          imagePullPolicy: IfNotPresent
+      restartPolicy: Always
+      imagePullSecrets:
+        - name: regcred
+      schedulerName: default-scheduler

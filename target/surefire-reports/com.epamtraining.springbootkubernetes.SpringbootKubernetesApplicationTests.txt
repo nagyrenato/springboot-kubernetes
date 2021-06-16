@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.epamtraining.springbootkubernetes.SpringbootKubernetesApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.002 s - in com.epamtraining.springbootkubernetes.SpringbootKubernetesApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.836 s - in com.epamtraining.springbootkubernetes.SpringbootKubernetesApplicationTests
